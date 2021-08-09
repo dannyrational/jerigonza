@@ -1,0 +1,26 @@
+{
+  "name": "jerigonza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i tailwind.css -o style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannyrational/jerigonza.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannyrational/jerigonza/issues"
+  },
+  "homepage": "https://github.com/dannyrational/jerigonza#readme"
+}

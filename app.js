@@ -4,10 +4,8 @@ let resultArray = [];
 let outputText = document.querySelector("#output");
 let translateBtn = document.querySelector("#translate-btn");
 
-translateBtn.addEventListener("click", translate);
-
-function translate(e) {
-  e.preventDefault()
+translateBtn.addEventListener("click", function translate(e) {
+  e.preventDefault();
   let inputText = inputField.value.toLowerCase().split("");
   outputText.innerText = resultArray.splice(0, resultArray.length)
   for (let i = 0; i < inputText.length; i++) {
@@ -19,7 +17,9 @@ function translate(e) {
     }
   }
   outputText.innerText = resultArray.join("");
-}
+});
+
+
 
 
 // function translation(e) {
