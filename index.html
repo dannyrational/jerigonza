@@ -11,11 +11,12 @@
 
 <body class="relative bg-purple-800 h-screen flex items-center">
   <div class="absolute top-0 right-0 bottom-0 left-0" id="particles-js"></div>
-  <div class="z-20 flex flex-col items-center w-full p-4 sm:max-w-[640px] sm:mx-auto">
+  <div
+    class="backdrop-blur-sm rounded-lg shadow-2xl z-20 flex flex-col items-center w-full p-4 sm:max-w-[640px] sm:mx-auto">
     <img src="jerigonza-titulo.png" alt="">
     <p class="z-20 text-white text-2xl mb-2 font-black">Escribe Tu Texto Abajo</p>
-    <textarea class="text-gray-500 font-semibold resize-none rounded w-full mb-8" name="input" id="word-input" cols="30"
-      rows="4"></textarea>
+    <textarea class="text-gray-500 font-semibold resize-none rounded w-full mb-8 overflow-auto" name="input"
+      id="word-input" cols="30" rows="4"></textarea>
     <div class="space-x-2">
       <button class="bg-pink-600 hover:bg-pink-700 transition-all duration-200 text-white p-3 rounded mb-8 font-bold"
         id="translate-btn">Traducir a
@@ -24,13 +25,14 @@
         class="bg-yellow-400 hover:bg-yellow-500 transition-all duration-200 text-white p-3 rounded mb-8 font-bold"
         id="copy-btn">Copiar</button>
     </div>
-    <p class="text-white text-2xl mb-2 font-black">Resultado</p>
-    <textarea class="text-gray-500 font-semibold bg-white w-full h-24 overflow-scroll rounded" id="output" name=""
-      cols="30" rows="10"></textarea>
+    <p class="text-white text-2xl mb-2 font-black">Traducción
+    </p>
+    <textarea class="text-gray-500 font-semibold bg-white resize-none w-full h-24 overflow-auto rounded" id="output"
+      name="" cols="30" rows="10"></textarea>
   </div>
 
   <div class="absolute bottom-0 right-0 left-0 flex justify-center items-center bg-pink-600 py-2">
-    <p class="text-white font-base text-xs">Hecho por <a class="font-bold" href="https:www.dannyrational.com"
+    <p class="text-white font-base text-xs">Hecho por <a class="font-bold" href="https://www.dannyrational.com"
         target="_blank">Dannyrational</a> 🤖
     </p>
   </div>
