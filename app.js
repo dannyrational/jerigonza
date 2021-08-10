@@ -1,10 +1,12 @@
 let inputField = document.querySelector("#word-input");
 let translateBtn = document.querySelector("#translate-btn");
+let copyBtn = document.querySelector('#copy-btn')
+let outputText = document.querySelector("#output");
 
 translateBtn.addEventListener("click", () => {
   const vowels = ["a", "e", "i", "o", "u", "á", "é", "í ", "ó", "ú"];
   let resultArray = [];
-  let outputText = document.querySelector("#output");
+
 
   let inputText = inputField.value.toLowerCase().split("");
   outputText.innerText = resultArray.splice(0, resultArray.length)
@@ -18,3 +20,8 @@ translateBtn.addEventListener("click", () => {
   }
   outputText.innerText = resultArray.join("");
 });
+
+copyBtn.addEventListener('click', () => {
+  outputText.select();
+  document.execCommand('copy');
+})
