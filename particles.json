@@ -4,7 +4,7 @@
             "value": 10,
             "density": {
                 "enable": true,
-                "value_area": 800
+                "value_area": 500
             }
         },
         "shape": {
@@ -15,5 +15,17 @@
                 "height": 60
             }
         }
-    }
+
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "resize": true
+        }
+    },
+    "retina_detect": true
 }

@@ -4,7 +4,7 @@ let copyBtn = document.querySelector('#copy-btn')
 let outputText = document.querySelector("#output");
 
 translateBtn.addEventListener("click", () => {
-  const vowels = ["a", "e", "i", "o", "u", "á", "é", "í ", "ó", "ú"];
+  const vowels = ["a", "e", "i", "o", "u", "á", "é", "í ", "ó", "ú", "y"];
   let resultArray = [];
 
 
